@@ -1,0 +1,13 @@
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>add fruit</title>
+    </head>
+    <body>
+        <h2>add fruits</h2>
+        <form action="#" th:action="@{/fruits/save-fruit}" th:object="${fruit}" method="post">
+           <input type="text" th:field="*{name}" placeholder="Enter name"/>
+           <input type="text" th:field="*{color}" placeholder="Enter color"/>
+           <input type="submit"/>
+        </form>
+    </body>
+</html>

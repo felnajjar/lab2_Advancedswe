@@ -1,0 +1,21 @@
+<html xmlns="http://www.thymeleaf.org">
+    <head>
+        <h1>List of fruits</h1>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Color</th>
+            </thead>
+            <tbody>
+                <tr th:each="fruit:${fruits}">
+                    <td th:text="${fruit.Id}"></td>
+                    <td th:text="${fruit.Name}"></td>
+                    <td th:text="${fruit.Color}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
